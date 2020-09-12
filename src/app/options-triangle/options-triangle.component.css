@@ -1,0 +1,30 @@
+.triangle{
+	margin: auto;
+	margin-top: 15%;
+	padding-top: 1px;
+	background-image: url(../../assets/images/bg-triangle.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 450px;
+	width: 650px;
+	height: 650px;
+}
+
+.vertice{
+	display: inline-block;
+}
+
+.vertice:first-child{
+	margin-left: 0%;
+	margin-top: 5%;
+}
+
+.vertice:nth-child(2){
+	float: right;
+	margin-top: 5%;
+}
+
+.vertice:nth-child(3){
+	margin-top: 20%;
+	margin-left: 33%;
+}

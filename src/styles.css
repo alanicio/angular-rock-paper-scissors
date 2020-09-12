@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  min-height: 100vh;
+  height: auto;
+  padding-top: 1px;
+  margin-top: -1px;
+  background-image: radial-gradient(farthest-side at 50% 0%,#1e3756,#161f40);
+}

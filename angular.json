@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-rock-paper-scissors"
+    }
+  },
+  "defaultProject": "angular-rock-paper-scissors",
+  "cli": {
+    "analytics": false
+  }
 }
