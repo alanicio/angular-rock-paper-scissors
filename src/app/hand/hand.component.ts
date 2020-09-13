@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HandComponent implements OnInit {
 	@Input() color:string;
 	@Input() logo:string;
+	@Input() userSelectionHandler:Function;
   constructor() { }
 
   ngOnInit(): void {

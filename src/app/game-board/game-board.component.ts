@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-board.component.css']
 })
 export class GameBoardComponent implements OnInit {
-
-  constructor() { }
+	public score:number;
+	public userSelection:string;
+  constructor() {
+  	this.score=0;
+  }
 
   ngOnInit(): void {
+  }
+
+  userSelectionHandler=(userSelection:string)=>{
+  	this.userSelection=userSelection;
   }
 
 }

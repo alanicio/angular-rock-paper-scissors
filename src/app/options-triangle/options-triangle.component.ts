@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'options-triangle',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./options-triangle.component.css']
 })
 export class OptionsTriangleComponent implements OnInit {
-
+	@Input() userSelectionHandler:Function;
   constructor() { }
 
   ngOnInit(): void {

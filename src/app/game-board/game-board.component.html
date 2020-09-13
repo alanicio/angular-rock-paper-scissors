@@ -1,1 +1,12 @@
-<p>game-board works!</p>
+<div class="header">
+	<div class="elementOfGame">
+		<p>ROCK</p>
+		<p>PAPER</p>
+		<p>SCISSORS</p>
+	</div>
+	<div class="score">
+		<p>SCORE</p>
+		<div>{{score}}</div>
+	</div>
+</div>
+<options-triangle *ngIf="!userSelection" [userSelectionHandler]="userSelectionHandler"></options-triangle>
