@@ -1,4 +1,4 @@
-#Give it a look!
+# Give it a look!
 https://quizzical-euler-494918.netlify.app/
 
 # AngularRockPaperScissors
