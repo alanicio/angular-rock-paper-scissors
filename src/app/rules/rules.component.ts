@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rules.component.css']
 })
 export class RulesComponent implements OnInit {
-
-  constructor() { }
+	public displayModal:boolean;
+  constructor() {
+  	this.displayModal=false;
+  }
 
   ngOnInit(): void {
+  }
+
+  modalStatus=()=>{
+  	if(this.displayModal){
+  		return "block";
+  	}
+  	else{
+  		return "none";
+  	}
+  }
+
+  displayHandler=()=>{
+  	this.displayModal=!this.displayModal;
   }
 
 }

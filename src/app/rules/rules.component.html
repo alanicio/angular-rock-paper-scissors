@@ -1,1 +1,13 @@
-<button>RULES</button>
+<div class="modal" style="display: {{modalStatus()}}">
+	<div class="modalSquare">
+		<div class="title">
+			RULES
+		</div>
+		<div class="tache" (click)="displayHandler()">
+			&#10005;
+		</div>
+		<div class="content">
+		</div>
+	</div>
+</div>
+<button (click)="displayHandler()">RULES</button>
