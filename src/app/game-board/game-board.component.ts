@@ -30,4 +30,8 @@ export class GameBoardComponent implements OnInit {
   	this.userSelection=userSelection;
   }
 
+  modifyScore=(adding:number)=>{
+    this.score=this.score+adding;
+  }
+
 }
