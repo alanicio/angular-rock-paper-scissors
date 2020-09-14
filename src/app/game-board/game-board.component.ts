@@ -8,11 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class GameBoardComponent implements OnInit {
 	public score:number;
 	public userSelection:string;
+  public houseSeelction:string;
+  readonly hands={
+    paper:"#5572f2",
+    scissors:"#eca00f",
+    rock:"#db2e4c",
+  }
+  
   constructor() {
   	this.score=0;
   }
 
   ngOnInit(): void {
+  }
+
+  getHands=()=>{
+    return this.hands;
   }
 
   userSelectionHandler=(userSelection:string)=>{

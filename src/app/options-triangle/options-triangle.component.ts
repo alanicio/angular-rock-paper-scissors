@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OptionsTriangleComponent implements OnInit {
 	@Input() userSelectionHandler:Function;
+	@Input() getHands:Function;
   constructor() { }
 
   ngOnInit(): void {
