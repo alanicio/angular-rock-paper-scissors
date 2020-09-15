@@ -10,4 +10,10 @@
 	</div>
 </div>
 <options-triangle *ngIf="!userSelection" [userSelectionHandler]="userSelectionHandler" [getHands]="getHands"></options-triangle>
-<versus *ngIf="userSelection" [color]="getHands()[userSelection]" [userHand]="userSelection" [hands]="getHands" [modifyScore]="modifyScore"></versus>
+<versus *ngIf="userSelection"
+	[color]="getHands()[userSelection]"
+	[userHand]="userSelection"
+	[hands]="getHands"
+	[modifyScore]="modifyScore"
+	[playAgain]="playAgain"
+></versus>

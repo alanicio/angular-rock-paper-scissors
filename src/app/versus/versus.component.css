@@ -1,24 +1,64 @@
-.versusZone{
-	width: 43%;
+.zone{
 	margin: auto;
 	margin-top: 2%;
 }
 
-.half{
-	width: 50%;
+.versus{
+	width: 43%;
+}
+
+.resul{
+	width: 60%;
+}
+
+.part{
 	display: inline-block;
 	text-align: center;
 	padding-top: 5%;
 	vertical-align: top;
 }
 
-.half div{
+.half{
+	width: 50%;
+}
+
+.third{
+	width: 33%;
+}
+
+.third button{
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+	padding: 5% 10%;
+	letter-spacing: 3px;
+	color: #cb5168;
+	border:none;
+	border-radius: 8px;
+	background-color: white;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.part div{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 20px;
 	letter-spacing: 2px;
 	color: white;
 	font-weight: bold;
+}
+
+.competitor{
 	margin-bottom: 10%;
+	font-size: 20px;
+}
+
+.matchResul{
+	margin-top: 25%;
+	font-size: 32px;
+	margin-bottom: 5%;
 }
 
 .circle{

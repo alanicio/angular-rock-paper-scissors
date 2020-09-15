@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class GameBoardComponent implements OnInit {
 	public score:number;
 	public userSelection:string;
-  public houseSeelction:string;
   readonly hands={
     paper:"#5572f2",
     scissors:"#eca00f",
@@ -32,6 +31,10 @@ export class GameBoardComponent implements OnInit {
 
   modifyScore=(adding:number)=>{
     this.score=this.score+adding;
+  }
+
+  playAgain=()=>{
+    this.userSelection=undefined;
   }
 
 }

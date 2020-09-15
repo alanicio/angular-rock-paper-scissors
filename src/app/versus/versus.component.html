@@ -1,10 +1,26 @@
-<div class="versusZone">
-	<div class="half">
-		<div>YOU PICKED</div>
+<div *ngIf="!finished" class="zone versus">
+	<div class="part half">
+		<div class="competitor">YOU PICKED</div>
 		<hand [color]="color" [logo]="userHand"></hand>
 	</div>
-	<div class="half">
-		<div>THE HOUSE PICKED</div>
+	<div class="part half">
+		<div class="competitor">THE HOUSE PICKED</div>
+		<div *ngIf="!houseHand" class="circle"></div>
+		<hand *ngIf="houseHand" [color]="hands()[houseHand]" [logo]="houseHand"></hand>
+	</div>
+</div>
+
+<div *ngIf="finished" class="zone resul">
+	<div class="part third">
+		<div class="competitor">YOU PICKED</div>
+		<hand [color]="color" [logo]="userHand"></hand>
+	</div>
+	<div class="part third">
+		<div class="matchResul">{{finished}}</div>
+		<button (click)="reset()">PLAY AGAIN</button>
+	</div>
+	<div class="part third">
+		<div class="competitor">THE HOUSE PICKED</div>
 		<div *ngIf="!houseHand" class="circle"></div>
 		<hand *ngIf="houseHand" [color]="hands()[houseHand]" [logo]="houseHand"></hand>
 	</div>

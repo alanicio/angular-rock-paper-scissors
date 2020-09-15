@@ -10,7 +10,9 @@ export class VersusComponent implements OnInit {
 	@Input() userHand:string;
 	@Input() hands:Function;
   @Input() modifyScore:Function;
+  @Input() playAgain:Function;
 	public houseHand:string;
+  public finished:string;
 
   constructor() { }
 
@@ -40,17 +42,23 @@ export class VersusComponent implements OnInit {
     if(this.userHand!=this.houseHand){
       if(whoBeatsWho[this.userHand]==this.houseHand){
         this.modifyScore(1);
-        alert("you Win!");
+        this.finished="YOU WIN!";
       }
       else{
         this.modifyScore(-1);
-        alert("you Lose!");
+        this.finished="YOU LOSE!"
       }
     }
     else{
       this.modifyScore(0);
-      alert("tie!");
+      this.finished="TIE!"
     }
+  }
+
+  reset=()=>{
+    this.houseHand=undefined;
+    this.finished=undefined;
+    this.playAgain();
   }
 
 }
