@@ -15,7 +15,13 @@ export class GameBoardComponent implements OnInit {
   }
   
   constructor() {
-  	this.score=0;
+    if(localStorage.getItem("score")){
+      this.score=parseInt(localStorage.getItem("score"));
+    }
+    else{
+      localStorage.setItem("score","0");
+      this.score=0;
+    }
   }
 
   ngOnInit(): void {
@@ -31,6 +37,7 @@ export class GameBoardComponent implements OnInit {
 
   modifyScore=(adding:number)=>{
     this.score=this.score+adding;
+    localStorage.setItem("score",this.score.toString());
   }
 
   playAgain=()=>{
