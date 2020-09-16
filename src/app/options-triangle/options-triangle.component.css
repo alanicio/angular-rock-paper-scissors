@@ -28,3 +28,39 @@
 	margin-top: 20%;
 	margin-left: 33%;
 }
+
+@media screen and (max-height: 850px){
+	.triangle{
+		width: 500px;
+		height: 500px;
+		background-size: 300px;
+	}
+
+	.vertice:nth-child(3){
+		margin-top: 8%;
+		margin-left: 28%;
+	}
+}
+
+@media screen and (max-height: 750px){
+	.vertice:nth-child(3){
+		margin-left: 33%;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.triangle{
+		margin-top: 15%;
+		width: 350px;
+		height: 350px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.triangle{
+		margin-top: 35%;
+		width: 300px;
+		height: 300px;
+		background-size: 250px;
+	}
+}

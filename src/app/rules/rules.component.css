@@ -69,3 +69,11 @@ button{
 	height: 350px;
 }
 
+@media screen and (max-width: 800px){
+	button{
+		right: 39%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
