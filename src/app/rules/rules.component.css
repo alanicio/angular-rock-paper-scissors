@@ -69,11 +69,50 @@ button{
 	height: 350px;
 }
 
+@media screen and (max-width: 1550px){
+	.modalSquare{
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.modalSquare{
+		width: 40%;
+	}
+}
+
 @media screen and (max-width: 800px){
 	button{
 		right: 35%;
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+
+	.modalSquare{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 620px){
+	.modalSquare{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.modalSquare{
+		width: 85%;
+		padding-bottom: 10%;
+	}
+
+	.title{
+		padding-left: 35%;
+	}
+
+	.tache{
+		position: absolute;
+		top: 57%;
+		left: 49%;
 	}
 }
 
