@@ -24,4 +24,8 @@
 		<div *ngIf="!houseHand" class="circle"></div>
 		<hand *ngIf="houseHand" [color]="hands()[houseHand]" [logo]="houseHand"></hand>
 	</div>
+	<div class="part mobile">
+		<div class="matchResul">{{finished}}</div>
+		<button (click)="reset()">PLAY AGAIN</button>
+	</div>
 </div>
