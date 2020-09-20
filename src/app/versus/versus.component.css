@@ -69,3 +69,67 @@ button::-moz-focus-inner {
 	margin: auto;
 	margin-top: 17% !important;
 }
+
+@media screen and (max-width: 1100px){
+	.zone{
+		margin-top: 5%;
+	}
+
+	.versus{
+		width: 80%;
+	}
+
+	.resul{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 790px){
+	.zone{
+		margin-top: 10%;
+	}
+
+	.versus{
+		width: 90%;
+	}
+
+	.resul{
+		width: 98%;
+	}
+
+	.part div{
+		letter-spacing: 1px;
+	}
+
+	.competitor{
+		font-size: 16px;
+	}	
+}
+
+@media screen and (max-width: 502px){
+	.third{
+		width: 35%;
+	}
+
+	.third:nth-child(2){
+		width: 30%;
+	}
+
+	.third button{
+		letter-spacing: 2px;
+	}
+
+	.matchResul{
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 402px){
+	.zone{
+		margin-top: 30%;
+	}
+
+	.part:first-child .competitor{
+		margin-bottom: 21%;
+	}
+}
